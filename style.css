@@ -3,26 +3,29 @@
     padding: 0;
     margin: 0;
 }
+
+
+
 body {
-  background-color: #d9dcd6;
+  background-color: rgb(36, 33, 33);
+  font-size: 1.75rem;
+  line-height: 1.5;
 }
 
 .header {
         padding: 20px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        background-color: rgb(20, 18, 18);
+        background-color: rgb(36, 33, 33);
         color: #ffffff;
 }
 
 .header h1 {
     display: inline-block;
     font-size: 48px;
+    color: goldenrod;
+    background-color:  rgb(36, 33, 33);
 }
 
-.header h1{
-    color: rgb(20, 18, 18);
-    background-color: goldenrod;
-}
 /* stlying for the navigation bar */
 .header nav {
     padding-top: 15px;
@@ -54,13 +57,29 @@ body {
     display:flex;
     justify-content: flex-end;
     align-items: flex-end;
+    float: clear;
 }
 .backgroundImage p {
     background-color: goldenrod;
-    color: rgb(20, 18, 18);
+    color: rgb(36, 33, 33);
     margin-bottom: 15px;
     padding: 10px;
     font-size: large;
     font-weight: bold;
     
+}
+
+.container {
+    width: 40%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-right: 0;
+    border-right: 3px solid goldenrod;
+    display: flex;
+    justify-content: flex-end;;
+}
+
+.container h2 {
+    color: goldenrod;
+    padding-right: 1em;
 }
