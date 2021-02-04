@@ -69,11 +69,16 @@ body {
     
 }
 
+.content {
+display: flex;
+max-width: 100%;
+}
+
+
 .about-me {
     width: 100%;
     padding-top: 1em;
     padding-bottom: 1em;
-    
     display: flex;
     justify-content: flex-start;
 }
@@ -109,7 +114,19 @@ body {
 .work h2 {
     color: goldenrod;
     padding-right: 1em;
-    padding-left: 2em;
+    padding-left: 2.2em;
     border-right: 3px solid goldenrod;
     flex-wrap: nowrap;
+}
+
+.large {
+    padding-left: 7em;
+    margin-bottom: 1em;
+}
+
+.small {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 5px;
+
 }
