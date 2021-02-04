@@ -121,8 +121,17 @@ max-width: 100%;
       "work main";
   }
   .work { grid-area: work; }
-  .main { grid-area: main; }
-
+  .main { grid-area: 1 / 2 / 4 / 3; }
+  .secondary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". ."
+      ". .";
+    grid-area: 3 / 2 / 4 / 3;
+  }
 
 
 .work {
@@ -145,9 +154,11 @@ max-width: 100%;
 }
 
 .large {
-    padding-left: 7em;
-    margin-bottom: 1em;
+    /* padding-left: 7em;
+    margin-bottom: 1em; */
+    align-self: center;
 }
+
 
 .small {
     width: 300px;
