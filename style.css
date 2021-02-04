@@ -96,3 +96,20 @@ body {
     
 }
 
+.work {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.work h2 {
+    color: goldenrod;
+    padding-right: 1em;
+    padding-left: 2em;
+    border-right: 3px solid goldenrod;
+    flex-wrap: nowrap;
+}
