@@ -48,6 +48,7 @@ body {
     color: goldenrod;
     list-style-type: none;
 }
+/* image under the header and the contents inside */
 .backgroundImage {
     height: 220px;
     width: 100%;
@@ -85,7 +86,7 @@ width: 96%;
     border-right: 3px solid goldenrod;
 }
 
-
+/* side bar with my about me section */
 #about-me {
     width: 100%;
     padding-top: 1em;
@@ -111,7 +112,7 @@ width: 96%;
     align-self: center;
     
 }
-
+/* positioning my images into a grid */
 .grid-container {
     display: grid;
     grid-template-columns: 0.3fr 1.4fr;
@@ -155,6 +156,7 @@ width: 96%;
     flex-wrap: nowrap;
     align-self: center;
 }
+/* work section images that link to applications */
 #imgdiv img {
         display:block;
         margin:auto;
@@ -162,7 +164,7 @@ width: 96%;
         z-index: 2;
 
 }
-#imgtext a {
+#imgtext  {
     position: relative;
     z-index: 2; /* puts the box ontop of the image */
     background: goldenrod;
@@ -172,9 +174,10 @@ width: 96%;
     padding: 10px;
     color: white;
     font-weight: bold;
+    text-decoration: underline;
     
 }
-#imgtext1 a {
+#imgtext1  {
     position: relative;
     z-index: 2; /* puts the box ontop of the image */
     background: goldenrod;
@@ -184,8 +187,14 @@ width: 96%;
     padding: 10px;
     color: white;
     font-weight: bold;
+    text-decoration: underline;
 
 
+}
+a:hover,
+img:hover {
+    box-shadow: inset 0px 0px 8px silver, 0 0 15px silver;
+    
 }
 
 
@@ -204,12 +213,14 @@ width: 96%;
     margin-bottom: 1em;
 
 }
+
 .footer h2 {
     color: goldenrod;
-   
+   margin-top: 1em;
     text-align: center;
+    text-decoration: underline;
 }
-
+/* control for my bottom nav bar */
 .footer nav {
     padding-top: 15px;
     margin-bottom: 2em;
