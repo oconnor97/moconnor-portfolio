@@ -71,7 +71,8 @@ body {
 .my-photo {
     align-self: center;
     margin-right: 8em;
-    border-radius: 25%;
+    border-radius: 50%;
+    transition-timing-function: cubic-bezier(0,0,1,1);
     
 }
 
@@ -84,7 +85,7 @@ max-width: 100%;
 }
 
 
-.about-me {
+#about-me {
     width: 100%;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -93,7 +94,7 @@ max-width: 100%;
 }
 
 
-.about-me h2 {
+#about-me h2 {
     color: goldenrod;
     padding-right: 1em;
     padding-left: 2em;
@@ -101,7 +102,7 @@ max-width: 100%;
     flex-wrap: nowrap;
 }
 
-.about-me p {
+#about-me p {
     font-size: 0.7em;
     margin-left: 1em;
     color: goldenrod;
@@ -120,8 +121,9 @@ max-width: 100%;
       "work main"
       "work main";
   }
-  .work { grid-area: work; }
-  .main { grid-area: 1 / 2 / 4 / 3; }
+  #work { grid-area: work; }
+  .main { grid-area: 1 / 2 / 4 / 3;
+ }
   .secondary {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -134,29 +136,46 @@ max-width: 100%;
   }
 
 
-.work {
+#work {
     width: 100%;
     padding-top: 1em;
     padding-bottom: 1em;
     border-right: 3px solid goldenrod;
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    justify-content: center;
+   
 }
 
 
-.work h2 {
+#work h2 {
     color: goldenrod;
     padding-right: 1em;
     padding-left: 2.2em;
-    
     flex-wrap: nowrap;
     align-self: center;
 }
+#imgdiv img {
+        display:block;
+        margin:auto;
+        zoom: 125%;
+        z-index: 2;
+
+}
+#imgtext {
+    position: absolute;
+    z-index: 3; /* put .gold-box above .green-box and .dashed-box */
+    background: gold;
+    width: 80%;
+    left: 60px;
+    top: 3em;
+    
+}
 
 .large {
-    /* padding-left: 7em;
-    margin-bottom: 1em; */
-    align-self: center;
+    /* padding-left: 7em; */
+    margin-bottom: 1em;
+    display: grid;
+    align-self: end;
 }
 
 
@@ -167,7 +186,7 @@ max-width: 100%;
     margin-bottom: 1em;
 
 }
-.contact-me {
+/* #contact-me {
     width: 100%;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -177,14 +196,14 @@ max-width: 100%;
 }
 
 
-.contact-me h2 {
+#contact-me h2 {
     color: goldenrod;
     padding-right: 1em;
     padding-left: 1.2em;
-    /* border-right: 3px solid goldenrod; */
+    border-right: 3px solid goldenrod;
     flex-wrap: nowrap;
     align-self: center;
-}
+} */
 .footer h2 {
     color: goldenrod;
    
@@ -211,3 +230,26 @@ max-width: 100%;
     color: goldenrod;
     list-style-type: none;
 }
+
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .header {
+      width: 80%;
+      padding: 0;
+    }
+    .row h2 {
+      width: 100%;
+    }
+    .work h2{
+        width: 100%
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .backgroundImage, header, .row h2, .work h2 {
+      width: 100%;
+    }
+  }
+
+
