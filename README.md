@@ -6,7 +6,7 @@ This is a poersonal portfolio page designed to show employers applications that 
 
 Hopefully when presented with this page, people will get a look into who I am as a person and emplyoee!
 
-![] (images/2021-02-05.png)
+![](images/2021-02-05.png)
 
 ## Teachnologies 
 
