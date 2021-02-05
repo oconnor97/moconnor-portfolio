@@ -162,6 +162,9 @@ width: 96%;
         margin:auto;
         zoom: 125%;
         z-index: 2;
+        border: 3px solid goldenrod;
+        border-radius: 12%;
+        
 
 }
 #imgtext  {
@@ -203,6 +206,8 @@ img:hover {
     margin-bottom: 1em;
     display: grid;
     align-self: end;
+    opacity: 5;
+    
 }
 
 
@@ -211,7 +216,7 @@ img:hover {
     height: 200px;
     margin-left: 5em;
     margin-bottom: 1em;
-
+    opacity: 5;
 }
 
 .footer h2 {
@@ -243,7 +248,7 @@ img:hover {
 }
 
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:768px) {
     /* For tablets: */
     .header {
       width: 80%;
