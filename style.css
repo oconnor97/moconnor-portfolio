@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+body, html {
+    width: 100% !important;
+    height: auto;
+}
 
 
 body {
@@ -18,7 +22,7 @@ body {
         background-color: rgb(36, 33, 33);
         color: #ffffff;
         width: 96%;
-        flex-shrink: 0;
+        flex-grow: 1;
 }
 
 .header h1 {
@@ -69,7 +73,7 @@ body {
     padding: 10px;
     font-size: large;
     font-weight: bold;
-    flex-shrink: 0;
+
     
 }
 .my-photo {
@@ -113,6 +117,7 @@ width: 96%;
     color: goldenrod;
     font-family: monospace;
     align-self: center;
+    flex-grow: 1;
     
 }
 /* positioning my images into a grid */
@@ -258,18 +263,35 @@ img:hover {
 @media only screen and (max-width:768px) {
     /* For tablets: */
     .header {
-      width: 80%;
+      width: 130%;
       padding: 0;
     }
     .backgroundImage, .row h2, .work h2 {
-      width: 100%;
-  }
+      width: 130%;
+    }
+    body {
+        width: 100%;
+        height: auto;
+    }
+   
+}
+
  
   @media only screen and (max-width:500px) {
     /* For mobile phones: */
     .backgroundImage, header, .row h2, .work h2 {
-      width: 100%;
+      width: 150%;
+      flex-grow: 1;
     }
+    .row p {
+        width: 200%;
+        flex-grow: 1;
+    }
+    body {
+        width: 130%;
+        height: auto;
+    }
+
   }
 
 
